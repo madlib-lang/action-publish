@@ -1,0 +1,25 @@
+{
+  "name": "action-publish",
+  "description": "Create a Madlib release for downstream consumption",
+  "devDependencies": {
+    "@action-validator/cli": "^0.6.0",
+    "@action-validator/core": "^0.6.0",
+    "lint-staged": "^15.2.2",
+    "eslint": "8.56.0"
+  },
+  "version": "0.0.1",
+  "main": "action.yml",
+  "scripts": {
+    "test": "echo \"no tests\""
+  },
+  "keywords": [
+    "madlib",
+    "publish",
+    "action",
+    "github",
+    "gh-action",
+    "release"
+  ],
+  "author": "madlib-lang",
+  "license": "MIT"
+}
