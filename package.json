@@ -7,7 +7,7 @@
     "lint-staged": "^15.2.2",
     "eslint": "8.56.0"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "action.yml",
   "scripts": {
     "test": "echo \"no tests\""
