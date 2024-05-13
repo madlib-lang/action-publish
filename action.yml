@@ -18,7 +18,7 @@ runs:
       uses: TriPSs/conventional-changelog-action@v5.2.1
       with:
         presets: "conventionalcommits"
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ github.token }}
         skip-on-empty: false
         tag-prefix: 'v'
         skip-commit: true
