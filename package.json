@@ -10,7 +10,8 @@
   "version": "1.0.0",
   "main": "action.yml",
   "scripts": {
-    "test": "echo \"no tests\""
+    "test": "echo \"no tests\"",
+    "prepare": "husky"
   },
   "keywords": [
     "madlib",
