@@ -24,13 +24,14 @@ runs:
         skip-commit: true
         skip-version-file: true
     - name: 🪓 Deleting created tag from changelog...
+      shell: bash
       run: |
         git push --delete origin v${{ steps.changelog.outputs.version }}
         git tag -d v${{ steps.changelog.outputs.version }}
     - name: 📦 Creating release...
       id: create_release
       uses: softprops/action-gh-release@v2.0.5
-      inputs:
+      with:
         tag_name: ${{ github.event.inputs.version }}
         release_name: Release ${{ github.event.inputs.version }}
         body: ${{ steps.changelog.outputs.clean_changelog }}
